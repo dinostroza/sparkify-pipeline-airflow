@@ -42,17 +42,17 @@ class SqlQueries:
     """)
 
     user_table_test = ("""
-        SELECT COUNT(*) FROM users WHERE userid IS NULL
+        SELECT COUNT(*) FROM users WHERE first_name IS NULL
     """)
 
     song_table_test = ("""
-        SELECT COUNT(*) FROM songs WHERE song_id IS NULL
+        SELECT COUNT(*) FROM songs WHERE title IS NULL
     """)
 
     artist_table_test = ("""
-        SELECT COUNT(*) FROM artists WHERE artist_id IS NULL
+        SELECT COUNT(*) FROM artists WHERE name IS NULL
     """)
 
     time_table_test = ("""
-        SELECT COUNT(*) FROM time WHERE start_time IS NULL
+        SELECT COUNT(*) FROM time WHERE year IS NULL
     """)
