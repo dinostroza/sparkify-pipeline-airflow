@@ -35,7 +35,6 @@ def final_project():
         s3_bucket="learning-airflow-pipelines",
         s3_key="log-data",
         jsonpaths="log_json_path.json"
-        #timeformat='epochmillisecs'
     )
 
     stage_songs_to_redshift = StageToRedshiftOperator(
@@ -44,7 +43,7 @@ def final_project():
         aws_credentials_id="aws_credentials",
         table="staging_songs",
         s3_bucket="learning-airflow-pipelines",
-        s3_key="song-data",
+        s3_key="song-data"
     )
 
     load_songplays_table = LoadFactOperator(
